@@ -1,8 +1,7 @@
 # Reflection
-I've create a simple project to understand the core principles of a Reflection System in C++. This reflection system is not intended to be used in a real project 
+I've created a simple project to understand the core principles of a Reflection System in C++. This reflection system is not intended to be used in a real project 
 but it's just a proof of concept. It contains the bare minimum to run a simple example that use reflection and to avoid that tons of line of code can distract from the 
-core concept. I just wanted to have a small overview of how a reflection system works, so it currently can be used only to reflect string and int32_t types for example 
-and the custom parser is very inefficient and makes a lot of assumptions for example that the macros to reflect the data are not on the same line. 
+core concept. It currently can be used only to reflect string and int32_t types and the custom parser is very inefficient and makes a lot of assumptions, but still the solution can provide some insights of the entire flow and I believe it's easy to understand.
 
 The Visual Studio solution contains two projects **Precompiler** and **Reflection**. The first one is a simple parser that generate some necessaries *.cpp* and *.h* files, whereas the second contains the core classes of the for the reflection system and some usage examples.
 Every time we compile the **Reflection** project before compiling the **Precompiler** project is build and executed generating some new files (*\*_generated.h*) that will be used during the compilation. 
